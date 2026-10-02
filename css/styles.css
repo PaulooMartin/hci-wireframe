@@ -205,12 +205,6 @@ h1 {
   left: 0;
 }
 
-/* The pay period selector sits at the left of the toolbar, so its menu opens from the left edge. */
-.toolbar .dropdown .menu {
-  left: 0;
-  right: auto;
-}
-
 .menu button {
   display: block;
   width: 100%;
