@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Attendance Record · Payroll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar"></header>
+  <div class="layout">
+    <nav class="sidebar">
+      <a class="nav-link" href="index.html" data-nav="dashboard">Dashboard</a>
+      <a class="nav-link active" href="attendance.html" data-nav="attendance">Attendance Record</a>
+      <a class="nav-link" href="payslips.html" data-nav="payslips">Payslips</a>
+      <a class="nav-link" href="payroll-reports.html" data-nav="payroll-reports">Payroll Reports</a>
+    </nav>
+    <main class="content">
+      <h1>Attendance Record</h1>
+      <div class="toolbar">
+        <div class="search" id="search">
+          <label for="search-input">Search:</label>
+          <input id="search-input" type="text" placeholder="example: Employee name or number..." autocomplete="off" spellcheck="false">
+          <ul class="menu" hidden></ul>
+        </div>
+        <div class="dropdown" id="period-dropdown"></div>
+      </div>
+      <div id="results"></div>
+    </main>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/attendance.js"></script>
+</body>
+</html>
